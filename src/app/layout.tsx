@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Sioux',
-  description: 'Landing page profissional com Next.js',
+  description: '',
 };
 
 export default function RootLayout({
