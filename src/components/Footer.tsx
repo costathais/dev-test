@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { FooterProps } from '@/types';
-import logo from '../../public/assets/logo.png';
+import logo from '../../public/assets/logo-wht.png';
 
 export default function Footer({ menuItems = [] }: FooterProps) {
   const [name, setName] = useState('');
@@ -41,7 +41,7 @@ export default function Footer({ menuItems = [] }: FooterProps) {
     <footer className="bg-[#170038]">
     <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-start gap-8">
     <div className="flex flex-col gap-8">
-    <Image className="filter brightness-0 invert" src={logo} alt="Logo" width={120} height={40} />
+    <Image src={logo} alt="Logo" width={120} height={40} />
     <nav className="flex flex-col">
     {menuItems.map((item, idx) => (
       <a
